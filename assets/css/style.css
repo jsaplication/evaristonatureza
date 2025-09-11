@@ -100,7 +100,7 @@ li {
 }
 
 .header-fixo.scrolled .logo .logoimg {
-  content: url('/evaristonatureza-main/assets/img/Logo\ EN.png'); /* Troca a imagem */
+  content: url('/assets/img/Logo-branca.png'); /* Troca a imagem */
 }
 
 /* Logo */
@@ -790,7 +790,7 @@ li {
 .parallax {
   position: relative;
   height: 400px; /* altura de toda a tela */
-  background-image: url('/evaristonatureza-main/assets/img/bg.jpg'); /* coloque sua imagem aqui */
+  background-image: url('/assets/img/bg.jpg'); /* coloque sua imagem aqui */
   background-attachment: fixed; /* faz a imagem ficar fixa enquanto rola */
   background-size: cover;
   background-position: center;
@@ -1015,7 +1015,7 @@ li {
 .transform-life-cinematic {
   position: relative;
   height: 350vh; /* altura de toda a tela */
-  background-image: url('/evaristonatureza-main/assets/img/BANNER\ 2.jpg'); /* coloque sua imagem aqui */
+  background-image: url('/assets/img/BANNER\ 2.jpg'); /* coloque sua imagem aqui */
   background-attachment: fixed; /* faz a imagem ficar fixa enquanto rola */
   background-size: cover;
   background-position: center;
