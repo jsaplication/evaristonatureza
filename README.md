@@ -37,9 +37,9 @@ Se você deseja apoiar ou fazer parte da nossa causa:
 ## Contato
 
 Para mais informações ou parcerias:  
-(82) 8778-2821
-(82) 8123-6306
-**Site:** [https://evaristonatureza.com.br](https://evaristonatureza.com.br)
+- (82) 8778-2821
+- (82) 8123-6306
+- **Site:** [https://evaristonatureza.com.br](https://evaristonatureza.com.br)
 
 ---
 
