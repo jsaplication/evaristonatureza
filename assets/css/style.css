@@ -1014,7 +1014,7 @@ li {
 /* SECTION 6 TRANSFORME UMA VIDA */
 .transform-life-cinematic {
   position: relative;
-  height: 350vh; /* altura de toda a tela */
+  height: 400vh; /* altura de toda a tela */
   background-image: url('/assets/img/BANNER\ 2.jpg'); /* coloque sua imagem aqui */
   background-attachment: fixed; /* faz a imagem ficar fixa enquanto rola */
   background-size: cover;
