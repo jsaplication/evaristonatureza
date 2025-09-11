@@ -539,6 +539,7 @@ li {
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease;
+  color: #ffffff !important;
 }
 
 /* Ícones internos do Swiper */
@@ -546,7 +547,7 @@ li {
 .swiper-button-prev::after {
   font-size: 20px;
   font-weight: bold;
-  color: #ffffffc2;
+  color: #020202c2;
 }
 
 /* Hover */
@@ -1014,7 +1015,7 @@ li {
 /* SECTION 6 TRANSFORME UMA VIDA */
 .transform-life-cinematic {
   position: relative;
-  height: 400vh; /* altura de toda a tela */
+  height: 390vh; /* altura de toda a tela */
   background-image: url('/assets/img/BANNER\ 2.jpg'); /* coloque sua imagem aqui */
   background-attachment: fixed; /* faz a imagem ficar fixa enquanto rola */
   background-size: cover;
@@ -1050,7 +1051,6 @@ li {
   color: #ffffff;
   text-transform: uppercase;
   text-shadow: 5px 1px 20px #000000;
-
 }
 
 .subtitle {
@@ -1066,7 +1066,6 @@ li {
   margin-left: auto;
   margin-right: auto;
   text-shadow: 5px 1px 7px #000000;
-
 }
 
 
@@ -1075,18 +1074,14 @@ li {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
-  
 }
 
 .block {
   border-radius: 8px;
   padding: 25px;
   transition: background 0.3s;
-    background: rgba(0, 0, 0, 0.8);
-
+  background: rgba(0, 0, 0, 0.7);
 }
-
-
 
 .block:hover {
   background: rgba(0, 0, 0, 0.6);
@@ -1136,7 +1131,7 @@ li {
  
 
  .transform-life-cinematic{
-  height: 400vh;
+  height: 350vh;
 }
 
 }
@@ -1161,7 +1156,7 @@ li {
   }
   
   .transform-life-cinematic{
-  height: 610vh;
+  height: 480vh;
 }
 }
 
@@ -1256,7 +1251,7 @@ li {
   }
 
   .quemsomos-text p{
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin-bottom: 60px;
   }
 
@@ -1396,16 +1391,20 @@ li {
   border-radius: 8px;
 }
 
-@media (max-width: 600px){
+@media (max-width: 900px){
   .parceiro-text h2 {
   font-size: 3rem;
 }
+.parceiro-text p {
+  font-size: 1.3rem;
 }
 
-@media (max-width: 310px){
+}
+
+@media (max-width: 728px){
 .parceiro-text p {
   font-size: 1rem;
-  max-width: 70vw;
+  max-width: 85vw;
 }
 
 }
