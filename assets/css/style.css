@@ -13,7 +13,6 @@ html, body {
 
 html { scroll-behavior: smooth; }
 
-
 :root {
   --color-white: #fff;
   --color-dark: #000;
@@ -60,7 +59,6 @@ li {
   height: 100%;
 }
 
-
 /* Header */
 .header .container {
   display: flex;
@@ -73,22 +71,22 @@ li {
 
 .header {
   position: absolute;
-  top: 0px !important;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 1100;
   height: 70px;
   background: transparent;
-  padding: 18px 0;
+  padding: 0;
 }
 
 .header-fixo {
   position: fixed;
-  top: 0px;
-  left: 0px;
+  top: 0px !important;
+  left: 0px !important;
   width: 100%;
+  height: 70px;
   background-color: #1b4332;
-  box-shadow: 0px 15px 5px rgba(0,0,0,0.1);
   z-index: 1000;
   transition: all 0.4s ease;
 }
@@ -96,8 +94,6 @@ li {
 .header-fixo.scrolled .logo .logoimg {
   height: 83px;
 }
-
-
 
 /* Logo */
 .logo .logoimg {
@@ -112,7 +108,6 @@ li {
   content: url('/assets/img/Logo-branca.png'); 
 }
 }
-
 
 .main-nav .logoimg {
   display: none;
@@ -135,7 +130,6 @@ li {
 .menu-item {
   position: relative;
 }
-
 
 .menu-item a {
   color: #fff;
@@ -178,8 +172,6 @@ li {
 }
 }
 
-
-
 .submenu li a {
   color: #000000c7;
   padding: 12px 20px;
@@ -194,7 +186,6 @@ li {
 .menu-item.dropdown:hover .submenu {
   display: flex;
 }
-
 
 /* Estilização botões do header */
 .btn-ajude {
@@ -212,7 +203,6 @@ li {
   background: #31ca3e;
 }
 /* Estilização botões do header */
-
 
 /* Botão hamburguer */
 .hamburger {
@@ -297,19 +287,15 @@ li {
   cursor: pointer;
 }
 
-
 .menu-item.dropdown {
   position: relative;
 }
-
-
 
 .menu-item.dropdown > a {
   display: block;
   padding: 16px 44px 16px 0;
   line-height: 1.2;
 }
-
 
 .toggle-submenu {
   position: absolute;
@@ -327,12 +313,9 @@ li {
   padding: 0;
 }
 
-
-  
   .header .container {
     justify-content: space-between;
   }
-  
   
   /* Ocultar menu desktop */
   .main-nav {
@@ -355,7 +338,6 @@ li {
     display: initial;
     margin-left: -10px;
   }
-
 
   .main-nav.active {
     left: 0;
@@ -382,8 +364,6 @@ li {
     transition: all 0.3s ease;
   }
 
- 
-
   /* Menu lista vertical */
   .menu {
     flex-direction: column;
@@ -407,7 +387,6 @@ li {
   .menu-item a::after{
   bottom: 5px;
 }
-
 
   /* Submenu recolhido inicialmente */
   .submenu {
@@ -436,7 +415,6 @@ li {
 }
 }
 
-
 @media (max-width: 380px){
   .btn-ajude{
     padding: 10px 16px;
@@ -448,8 +426,6 @@ li {
     padding: inherit;
   }
 }
-
-
 
 /* SECTION 2 SLIDES */
 .hero-carousel {
@@ -477,7 +453,6 @@ li {
   user-select: none;
 }
 
-
 .swiper-container {
   width: 100%;
   height: 100%;
@@ -503,7 +478,6 @@ li {
   width: 700px;
 }
 
-
 .slide-text {
   position: absolute;
   top: 50%;
@@ -513,7 +487,6 @@ li {
   color: var(--white);
   z-index: 10;
 }
-
 
 .slide-text p {
   font-size: 1.1rem;
@@ -563,7 +536,6 @@ li {
 .btn-primary:hover {
   background-color: #7aaf29;
 }
-
 
 /* Navegação */
 /* Botões padrão do Swiper */
@@ -649,11 +621,11 @@ li {
   cursor: none;
 }
 
-  
 }
 
 .slide-text .h2-bold{
-  font-size: 2.2rem;
+  font-size: 2.1rem;
+  width: 25ch;
 }
 .slide-text .p-bold{
   font-size: 1rem;
@@ -665,19 +637,18 @@ li {
   justify-self: center;
 }
 
-
 @media (max-width: 400px){
   .swiper-slide .slide-text .logo-banner{
   width: 450px;
 }
 
 .slide-text .h2-bold{
-  width: 85vw;
+  width: 70vw;
+  font-size: 2rem;
   justify-self: center;
 }
 
 }
-
 
 @media (max-width: 250px){
 .slide-text p{
@@ -694,10 +665,26 @@ li {
 
 }
 
+/* NOSSO IMPACTO */
+.nosso-impacto {
+  padding: 48px 20px;
+  background: #ffffff;
+  position: relative;
+}
 
+.nosso-impacto .impacto-container {
+  max-width: 1400px;
+  margin: 0 auto 10px;
+  text-align: center;
+}
+.nosso-impacto .img-decoracao{
+  position: absolute;
+  width: 70px;
+  left: 10px;
+  top: 28px;
+}
 
-/* SECTION 3 COMO TRANSFORMAMOS */
-.transformamos-titulo::after{
+.impacto-titulo::after{
   content: "";               
     display: block;
     width: 130px;               
@@ -707,19 +694,7 @@ li {
     border-radius: 2px;        
 }
 
-.transformamos {
-  padding: 48px 20px;
-  background: #ffffff;
-  position: relative;
-}
-
-.transformamos .container {
-  max-width: 1400px;
-  margin: 0 auto 10px;
-  text-align: center;
-}
-
-.transformamos h2 {
+.impacto-titulo {
   font-size: 2rem;
   color: #006837;
   margin-bottom: 20px;
@@ -727,47 +702,37 @@ li {
   max-width: 80vw;
 }
 
-.transformamos-texto  {
+.impacto-texto  {
   font-size: 1.4rem;
   margin-bottom: 40px;
   font-weight: 300;
   max-width: 100vw;
 }
 
-.transformamos-items {
+.impacto-items {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
 }
 
-.transformamos-items .item {
+.impacto-items .item {
   transition: all 0.2s ease;
 }
 
-
-.transformamos-items .item:hover {
+.impacto-items .item:hover {
   transform: translateY(-5px) scale(1.02) !important;
   transition: all 0.1s ease !important;
-
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-
-.transformamos-items img {
+.impacto-items img {
   width: 100%;
   height: 240px;
   object-fit: cover;
   border-radius: 6px;
 }
 
-.transformamos .img-decoracao{
-  position: absolute;
-  width: 80px;
-  left: 10px;
-  top: 28px;
-}
-
-.transformamos-items h3 {
+.impacto-items h3 {
   font-size: 1.25rem;
   margin: 15px;
   color: #004d26;
@@ -775,7 +740,7 @@ li {
   justify-self: center;
 }
 
-.transformamos-items p {
+.impacto-items p {
   font-size: 1rem;
   margin: 0 15px 20px;
   color: #555;
@@ -784,40 +749,32 @@ li {
 }
 
 @media (max-width: 650px){
-.transformamos .img-decoracao{
+.nosso-impacto .img-decoracao{
   display: none;
 }
 
-.transformamos h2 {
+.impacto-titulo {
   font-size: 1.6rem;
 }
 
-
-.transformamos-texto {
+.impacto-texto {
   font-size: 1.1rem;
 }
 }
 
 @media (max-width: 400px){
-  .transformamos-items{
+  .impacto-items{
     justify-self: center;
   }
-  .transformamos-items img{
+  .impacto-items img{
     width: 90%;
   }
 
-.section.transformamos h2{
-  font-size: 1.6rem;
-}
-
-.transformamos-texto{
+  .impacto-texto{
   font-size: 1.3rem;
 }
 
 }
-
-
-
 
 /* SECTION 4 IMAGEM PARALLAX */
 .parallax {
@@ -876,10 +833,8 @@ li {
 }
 /* SECTION 4 IMAGEM PARALLAX */
 
-
-
 /* SECTION 5 MAIS SOBRE A ONG */
-.transform-section {
+.nossamissao-section {
   width: 1200px;
   justify-self: center;
   padding: 70px 0px 0px;
@@ -887,7 +842,7 @@ li {
   position: relative;
 }
 
-.transform-block {
+.nossamissao-block {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -896,15 +851,15 @@ li {
   flex-wrap: wrap;
 }
 
-.transform-block.reverse {
+.nossamissao-block.reverse {
   flex-direction: row-reverse;
 }
 
-.transform-image {
+.nossamissao-image {
   flex: 1 1 49%;
 }
 
-.transform-section .img-decoracao{
+.nossamissao-section .img-decoracao{
   position: absolute;
   width: 140px;
   right: -380px;
@@ -913,23 +868,23 @@ li {
 
 }
 
-.transform-image img {
+.nossamissao-image img {
   width: 100%;
   height: 400px;
   object-fit: cover;
 }
 
-.transform-text {
+.nossamissao-text {
   flex: 1 1 45%;
 }
 
-.transform-text h2 {
+.nossamissao-text h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
   color: #1b4332;
 }
 
-.transform-text p {
+.nossamissao-text p {
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 30px;
@@ -937,7 +892,7 @@ li {
   max-width: 90vw;
 }
 
-.transform-btn {
+.nossamissao-btn {
   display: inline-block;
   padding: 10px 24px;
   border: 2px solid #1b4332;
@@ -950,56 +905,55 @@ li {
   text-align: center;
 }
 
-.transform-btn:hover {
+.nossamissao-btn:hover {
   background-color: #1b4332;
   color: #fff;
 }
 
-
 /* ====== RESPONSIVIDADE ====== */
 @media (max-width: 1230px) {
-  .transform-block {
+  .nossamissao-block {
     flex-direction: column;
     text-align: center;
   }
 
-  .transform-block.reverse {
+  .nossamissao-block.reverse {
     flex-direction: column;
   }
 
-  .transform-image img {
+  .nossamissao-image img {
     max-height: 100%;
     width: 80vw;
   }
 
-  .transform-text h2 {
+  .nossamissao-text h2 {
     font-size: 2rem;
   }
 
-  .transform-text p {
+  .nossamissao-text p {
     font-size: 1.1rem;
     max-width: 80vw;
   }
 }
 
 @media (max-width: 700px) {
-  .transform-section {
+  .nossamissao-section {
     padding: 2rem 1rem;
     gap: 2rem;
   }
 
-  .transform-text h2 {
+  .nossamissao-text h2 {
     font-size: 1.6rem;
     text-align: start;
   }
 
-  .transform-text p {
+  .nossamissao-text p {
     font-size: 1.1rem;
     text-align: start;
 
   }
 
-  .transform-btn {
+  .nossamissao-btn {
     width: 100%;
     padding: 15px 10px !important;
     padding: 1rem;
@@ -1007,45 +961,42 @@ li {
 }
 
 @media (max-width: 400px){
-  .transform-text p {
+  .nossamissao-text p {
     font-size: 1rem;
     justify-self: center;
   }
 
-  .transform-text h2 {
+  .nossamissao-text h2 {
     font-size: 1.4rem;
   }
 
-  .transform-btn {
+  .nossamissao-btn {
     font-size: 0.9rem;
   }
 
 }
 
 @media (max-width: 260px){
-  .transform-text h2{
+  .nossamissao-text h2{
     font-size: 1.2rem;
     width: 80vw;
     justify-self: center;
   }
-.transform-text p {
+.nossamissao-text p {
     font-size: 0.8rem;
     width: 80vw;
   }
 
-  .transform-btn{
+  .nossamissao-btn{
     width: 150px;
     font-size: 0.8rem;
   }
-
-
 }
 
 /* SECTION 5 MAIS SOBRE A ONG */
 
-
-/* SECTION 6 TRANSFORME UMA VIDA */
-.transform-life-cinematic {
+/* DOE E TRANSFORME */
+.doeetransforme-section {
   position: relative;
   height: 390vh;
   background-image: url('/assets/img/BANNER\ 2.jpg');
@@ -1058,13 +1009,13 @@ li {
   color: #fff;
 }
 
-.transform-life-cinematic .overlay {
+.doeetransforme-section .overlay {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0);
 }
 
-.transform-life-cinematic .content {
+.doeetransforme-section .content {
   position: relative;
   text-align: center;
   z-index: 1;
@@ -1072,7 +1023,7 @@ li {
   max-width: 1500px;
 }
 
-.transform-life-cinematic h2 {
+.doeetransforme-section h2 {
   font-size: 3rem;
   margin-bottom: 2rem;
   background-color: #198edde1;
@@ -1099,7 +1050,6 @@ li {
   margin-right: auto;
   text-shadow: 5px 1px 7px #000000;
 }
-
 
 .blocks {
   display: grid;
@@ -1153,16 +1103,16 @@ li {
 
 /* Tablets */
 @media (max-width: 1024px) {
-  .transform-life-cinematic .blocks {
+  .doeetransforme-section .blocks {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .transform-life-cinematic .block-valorlivre {
+  .doeetransforme-section .block-valorlivre {
     grid-column: span 2;
   }
  
 
- .transform-life-cinematic{
+ .doeetransforme-section{
   height: 350vh;
 }
 
@@ -1170,33 +1120,33 @@ li {
 
 /* Celulares */
 @media (max-width: 768px) {
-  .transform-life-cinematic h2 {
+  .doeetransforme-section h2 {
     font-size: 2rem;
   }
 
-  .transform-life-cinematic .subtitle {
+  .doeetransforme-section .subtitle {
     font-size: 1.1rem;
   }
 
 
-  .transform-life-cinematic .blocks {
+  .doeetransforme-section .blocks {
     grid-template-columns: 1fr;
   }
 
-  .transform-life-cinematic .block-valorlivre {
+  .doeetransforme-section .block-valorlivre {
     grid-column: span 1;
   }
   
-  .transform-life-cinematic{
+  .doeetransforme-section{
   height: 480vh;
 }
 }
 
 @media (max-width: 260px){
-.transform-life-cinematic h2 {
+.doeetransforme-section h2 {
     font-size: 1.4rem;
   }
-.transform-life-cinematic .subtitle {
+.doeetransforme-section .subtitle {
     font-size: 0.8rem;
   }
 
@@ -1210,24 +1160,21 @@ li {
     font-size: 0.7rem;
 }}
 
-@media (max-width: 220px){
-  
-}
-/* SECTION 6 TRANSFORME UMA VIDA */
+/* DOE E TRANSFORME */
 
-/* SECTION 7 QUEM SOMOS */
-.quemsomos-section {
+/* SOBRRE NÓS */
+.sobrenos-section {
   padding: 20px 20px 80px;
   background: #ffffff;
 }
 
-.quemsomos-section .container {
+.sobrenos-section .container {
   max-width: 1200px;
   border-bottom: solid 2px #025317;
   justify-items: center;
 }
 
-.quemsomos-content {
+.sobrenos-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1235,12 +1182,12 @@ li {
   gap: 40px;
 }
 
-.quemsomos-text {
+.sobrenos-text {
   flex: 1;
   max-width: 100%;
 }
 
-.quemsomos-text h2 {
+.sobrenos-text h2 {
   color: #000000;
   font-size: 3.7rem;
   font-weight: bold;
@@ -1250,7 +1197,7 @@ li {
   margin-bottom: 20px;
 }
 
-.quemsomos-text p {
+.sobrenos-text p {
   font-size: 1.1rem;
   line-height: 1.6;
   color: #444;
@@ -1261,13 +1208,13 @@ li {
 }
 
 
-.quemsomos-image {
+.sobrenos-image {
   flex: 1;
   min-width: 300px;
   text-align: center;
 }
 
-.quemsomos-image img {
+.sobrenos-image img {
   height: 770px;
   border-radius: 8px;
   margin-top: 60px;
@@ -1276,21 +1223,21 @@ li {
 
 /* Responsivo para telas médias (tablets) */
 @media (max-width: 1110px) {
-  .quemsomos-content {
+  .sobrenos-content {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .quemsomos-text p{
+  .sobrenos-text p{
     font-size: 1.3rem;
     margin-bottom: 60px;
   }
 
-  .quemsomos-text h2 {
+  .sobrenos-text h2 {
     font-size: 3rem;
   }
-  .quemsomos-image img {
+  .sobrenos-image img {
   margin-bottom: 0px;
 }
 }
@@ -1304,6 +1251,7 @@ li {
   .quemsomos-text p {
     font-size: 1rem;
     text-align: start;
+    max-width: 80vw;
   }
 
   .quemsomos-text h2 {
@@ -1341,8 +1289,6 @@ li {
   max-width: 70%;
 }
 }
-
-
 
 /* SECTION 7 QUEM SOMOS */
 
@@ -1441,9 +1387,7 @@ li {
 
 }
 
-
 /* SECTION 8 PARCEIRO */
-
 
 /* SECTION 9 FOOTER */
 .footer {
@@ -1529,8 +1473,6 @@ li {
   transition: color .2s;
 }
 
-
-
 .footer-socials p{
   font-weight: 400;
   margin-bottom: 10px;
@@ -1594,9 +1536,6 @@ li {
 
 /* SECTION 9 FOOTER */
 
-
-
-
 /* BOTÕES FIXOS */
 
 /* COOKIE */
@@ -1640,7 +1579,6 @@ li {
   font-weight: bold;
 }
 
-
 /* Botão BackTop */
 .back-to-top {
   position: fixed;
@@ -1665,16 +1603,14 @@ li {
 
 @media (max-width: 600px){
 .back-to-top {
-  right: 10px !important;
-  width: 50px;
-  height: 50px;
-  border-radius: 40%;
+  right: 13px !important;
+  width: 45px;
+  height: 45px;
+  bottom: 95px;
   }
 
 }
 /* Botão BackTop */
-
-
 
 /* Botão Whatsapp */
 .whatsapp-fixo {
@@ -1712,7 +1648,6 @@ li {
 }
 /* Botão Whatsapp */
 
-
 /* Banner de aviso */
 .site-alert {
   position: fixed;
@@ -1735,7 +1670,7 @@ li {
 /* container interno */
 .site-alert-inner {
   width: min(1200px, calc(100% - 32px));
-  margin: 12px;
+  margin: 10px;
   background: linear-gradient(180deg,#ffffff, #f6fff6);
   border: 1px solid rgba(4,63,39,0.08);
   box-shadow: 0 10px 30px rgba(2,40,20,0.08);
