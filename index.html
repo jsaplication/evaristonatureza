@@ -61,9 +61,8 @@
 </head>
 
 <body>
-
   <!-- HEADER -->
-  <header class="header" role="banner">
+  <header class="header">
     <div class="container">
       <a href="#" class="logo">
         <img class="logoimg" src="assets/img/Logo-verde.png" alt="Logo da ONG" />
@@ -77,6 +76,9 @@
       </button>
 
       <nav class="main-nav">
+        <a href="#" class="logo">
+        <img class="logoimg" src="assets/img/Logo-verde.png" alt="Logo da ONG" />
+      </a>
         <ul class="menu">
           <li class="menu-item dropdown">
             <a href="#Sobre">Sobre nós</a>
@@ -128,10 +130,10 @@
   <section class="hero-carousel">
     <div class="swiper-container">
 
-      <div class="swiper-wrapper">
+    <div class="swiper-wrapper">
         <!-- Slide 1 -->
         <div class="swiper-slide hero-carousel grabbing">
-          <img class="claro-banner logo-slide" src="assets/img/MAO.png" alt="Imagem mão+praia">
+          <img class="claro-banner logo-slide" src="assets/img/MAO.png" alt="Banner 1 - ONG Evaristo Natureza">
           <div class="slide-text">
             <img class="claro-banner logo-banner" src="assets/img/logo fundo escuro.png" alt="Logotipo">
           </div>
@@ -140,31 +142,31 @@
 
         <!-- Slide 2 -->
         <div class="swiper-slide">
-          <img src="assets/img/bg.jpg" alt="Natureza protegida">
+          <img src="assets/img/bg.jpg" alt="Banner 2 - ONG Evaristo Natureza">
           <div class="slide-text">
-            <h2>Salve a nova geração</h2>
+            <h2 class="h2-bold">Salve a nova geração</h2>
             <p>Cada tartaruga merece um mar seguro para viver e crescer</p>
-            <a href="#Ajudeaprotegeravidamarinha" class="btn-primary">Ajude a proteger a vida marinha. Participe!</a>
+            <a href="#Ajudeaprotegeravidamarinha" class="btn-primary">Participe!</a>
           </div>
         </div>
 
         <!-- Slide 3 -->
         <div class="swiper-slide">
-          <img src="assets/img/BANNER 2.jpg" alt="Projeto sustentável">
+          <img src="assets/img/BANNER 2.jpg" alt="Banner 3 - ONG Evaristo Natureza">
           <div class="slide-text">
-            <h2>Natureza em equilíbrio</h2>
+            <h2 class="h2-bold">Natureza em equilíbrio</h2>
             <p>Águas limpas são vida para todos. Preserve nossas lagoas e mares.</p>
-            <a href="#Sejaumparceiro" class="btn-primary">Proteja o meio ambiente. Junte-se a nós!</a>
+            <a href="#Sejaumparceiro" class="btn-primary">Junte-se a nós!</a>
           </div>
         </div>
 
         <!-- Slide 4 -->
         <div class="swiper-slide">
-          <img src="assets/img/BANNER 3.jpeg" alt="Voluntários em ação">
+          <img src="assets/img/priaia (3).jpg" alt="Banner 4 - ONG Evaristo Natureza">
           <div class="slide-text">
             <h2 class="h2-bold">Plástico destrói praias</h2>
-            <p class="p-bold">Contamina nosso futuro.</p>
-            <a href="#Doe" class="btn-primary">Diga não ao plástico descartável. Faça a diferença!</a>
+            <p class="p-bold">Cuidar gera vida. Preserve, doe, transforme</p>
+            <a href="#Doe" class="btn-primary">Faça a diferença!</a>
           </div>
         </div>
       </div>
@@ -201,7 +203,7 @@
         </div>
 
         <div class="item" data-aos="fade-up" data-aos-delay="300">
-          <img src="assets/img/educação ambiental.jpeg" alt="Voluntários">
+          <img src="assets/img/conectamos_gerações.jpg" alt="Voluntários">
           <h3>3. Conectamos gerações</h3>
           <p><b>levamos educação ambiental</b> para crianças e jovens, garantindo continuidade da causa.</p>
         </div>
@@ -238,7 +240,7 @@
       <div class="transform-image">
         <img src="/assets/img/conscientização.jpg" alt="Pessoas realizando trabalho de voluntariado">
       </div>
-      <div class="transform-text">
+      <div class="transform-text" data-aos="fade-down" data-aos-delay="200">
         <h2>Podemos mudar o mundo</h2>
         <p>Podemos mudar o mundo começando pela nossa casa, pela nossa cidade, pelas nossas águas. <b>Ao preservar a
             lagoa e a praia</b>, não estamos apenas limpando o ambiente — estamos garantindo vida para os peixes,
@@ -367,7 +369,7 @@
 </a>
         </div>
         <div class="parceiro-image">
-          <img src="assets/img/Parceiros-felizes.png" alt="Parceiros felizes">
+          <img src="assets/img/seja-um-parceiro.jpg" alt="Parceiros felizes">
         </div>
       </div>
     </div>
@@ -465,8 +467,67 @@
     <button id="accept-cookies" class="accept-btn">Aceitar</button>
   </div>
 
+<!-- Aviso -->
+<div id="site-alert" class="site-alert" role="dialog" aria-live="polite" aria-label="Aviso do site" aria-hidden="false">
+  <div class="site-alert-inner">
+    <div class="site-alert-message">
+      <strong>Aviso:</strong>
+      <span>Estamos desenvolvendo nosso site. Alguns recursos podem estar temporariamente indisponíveis.</span>
+    </div>
+    <div class="site-alert-actions">
+      <button id="site-alert-ok" class="site-alert-btn" type="button" aria-label="Fechar aviso">Fechar</button>
+    </div>
+  </div>
+</div>
 
-  <!-- Scripts - JS -->
+<!-- Abiso na tela -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const BANNER = document.getElementById('site-alert');
+  const BTN = document.getElementById('site-alert-ok');
+  const TRANSITION_MS = 320; // deve bater com CSS .32s
+
+  if (!BANNER) {
+    console.warn('Aviso: elemento #site-alert não encontrado.');
+    return;
+  }
+  if (!BTN) {
+    console.warn('Aviso: botão #site-alert-ok não encontrado.');
+    return;
+  }
+
+  // Função de fechar (com animação)
+  function dismissBanner() {
+    // marca como escondido para ativar transição CSS
+    BANNER.setAttribute('aria-hidden', 'true');
+
+    // após a transição, tira do fluxo (display:none) pra evitar foco ou espaço
+    setTimeout(() => {
+      BANNER.style.display = 'none';
+    }, TRANSITION_MS + 20);
+  }
+
+  // clique
+  BTN.addEventListener('click', dismissBanner, { passive: true });
+
+  // permitir teclado (Enter / Space)
+  BTN.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      dismissBanner();
+    }
+  });
+
+  // fechar com ESC
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') dismissBanner();
+  });
+});
+</script>
+<!-- Abiso na tela -->
+
+  
+<!-- Scripts - JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
