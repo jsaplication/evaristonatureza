@@ -107,7 +107,7 @@ li {
 }
 
 /* Troca a logo apenas no Desktop */
-@media (min-width: px){
+@media (min-width: 991px){
 .header-fixo.scrolled .logo .logoimg {
   content: url('/assets/img/Logo-branca.png'); 
 }
