@@ -200,7 +200,7 @@ li {
 }
 
 .btn-ajude:hover {
-  background: #31ca3e;
+  background: #35e243f3;
 }
 /* Estilização botões do header */
 
@@ -269,13 +269,13 @@ li {
 .submenu {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease;
+  transition: max-height 0.2s ease;
   padding: inherit;
 }
 
 .submenu.open {
   max-height: 500px;
-  
+  padding: 5px;
 }
 
 /* Botão + */
@@ -430,7 +430,7 @@ li {
 /* SECTION 2 SLIDES */
 .hero-carousel {
   position: relative;
-  height: 83vh;
+  height: 85vh;
   overflow: hidden;
   cursor: grab;
 }
@@ -460,7 +460,6 @@ li {
 
 .swiper-slide {
   position: relative;
-
 }
 
 .swiper-slide img {
@@ -511,7 +510,7 @@ li {
 
 .slide-text .p-bold{
   font-size: 1.1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   font-weight: 500;
   border-radius: 5px;
   justify-self: center;
@@ -524,11 +523,11 @@ li {
 }
 .btn-primary {
   display: inline-block;
-  padding: 0.8rem 2rem;
+  padding: 0.7rem 2rem;
     background: #90d12f;
   color: #000000;
   font-weight: 400;
-  border-radius: 50px;
+  border-radius: 8px;
   text-decoration: none;
   transition: background 0.5s;
 }
@@ -667,7 +666,7 @@ li {
 
 /* NOSSO IMPACTO */
 .nosso-impacto {
-  padding: 48px 20px;
+  padding: 28px 20px;
   background: #ffffff;
   position: relative;
 }
@@ -681,7 +680,7 @@ li {
   position: absolute;
   width: 70px;
   left: 10px;
-  top: 28px;
+  top: 18px;
 }
 
 .impacto-titulo::after{
@@ -697,7 +696,7 @@ li {
 .impacto-titulo {
   font-size: 2rem;
   color: #006837;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   justify-self: center;
   max-width: 80vw;
 }
@@ -827,8 +826,7 @@ li {
   font-size: 2rem;  
 }
 .texto-destaque h3 {
-  font-size: 1rem;
-
+  font-size: 1.2rem;
 }
 }
 /* SECTION 4 IMAGEM PARALLAX */
@@ -861,8 +859,8 @@ li {
 
 .nossamissao-section .img-decoracao{
   position: absolute;
-  width: 140px;
-  right: -380px;
+  width: 120px;
+  right: -23rem;
   top: 35px;
   transform: translateX(8px) rotate(-115deg);
 
@@ -872,7 +870,9 @@ li {
   width: 100%;
   height: 400px;
   object-fit: cover;
+  border-radius: 2px;
 }
+
 
 .nossamissao-text {
   flex: 1 1 45%;
@@ -900,7 +900,7 @@ li {
   text-decoration: none;
   font-weight: 500;
   border-radius: 4px;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease !important;
   width: 533px;
   text-align: center;
 }
@@ -998,7 +998,7 @@ li {
 /* DOE E TRANSFORME */
 .doeetransforme-section {
   position: relative;
-  height: 390vh;
+  height: 240vh;
   background-image: url('/assets/img/BANNER\ 2.jpg');
   background-attachment: fixed; /* imagem fixa enquanto rola */
   background-size: cover;
@@ -1020,7 +1020,7 @@ li {
   text-align: center;
   z-index: 1;
   width: 90%;
-  max-width: 1500px;
+  max-width: 1700px;
 }
 
 .doeetransforme-section h2 {
@@ -1053,8 +1053,8 @@ li {
 
 .blocks {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
   margin-top: 2rem;
 }
 
@@ -1062,16 +1062,17 @@ li {
   border-radius: 8px;
   padding: 25px;
   transition: background 0.3s;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 5px 5px 10px #2e2e2e;
 }
 
 .block:hover {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .block h3 {
   font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .block p {
@@ -1099,6 +1100,7 @@ li {
   margin-top: 1rem;
 }
 
+
 /* ---- RESPONSIVIDADE ---- */
 
 /* Tablets */
@@ -1113,7 +1115,7 @@ li {
  
 
  .doeetransforme-section{
-  height: 350vh;
+  height: 265vh;
 }
 
 }
@@ -1138,7 +1140,7 @@ li {
   }
   
   .doeetransforme-section{
-  height: 480vh;
+  height: 380vh;
 }
 }
 
@@ -1244,21 +1246,21 @@ li {
 
 /* Responsivo para telas pequenas (smartphones) */
 @media (max-width: 728px) {
-  .quemsomos-section {
+  .sobrenos-section {
     padding: 40px 15px;
   }
 
-  .quemsomos-text p {
+  .sobrenos-text p {
     font-size: 1rem;
     text-align: start;
     max-width: 80vw;
   }
 
-  .quemsomos-text h2 {
+  .sobrenos-text h2 {
     font-size: 2.5rem;
   }
 
-  .quemsomos-image img {
+  .sobrenos-image img {
   height: 600px;
   border-radius: 8px;
   margin-top: 60px;
@@ -1266,25 +1268,25 @@ li {
 }
 
 @media (max-width: 460px) {
-  .quemsomos-image img{
+  .sobrenos-image img{
   height: 400px;
   }
 }
 
 @media (max-width: 360px){
-  .quemsomos-image img{
+  .sobrenos-image img{
   height: 300px;
   }
-   .quemsomos-text p {
+   .sobrenos-text p {
     font-size: 1rem;
   }
-  .quemsomos-text h2 {
+  .sobrenos-text h2 {
     font-size: 2.4rem;
     width: 90vw;
     justify-self: center;
   }
 
-  .quemsomos-text {
+  .sobrenos-text {
   flex: 1;
   max-width: 70%;
 }
@@ -1344,9 +1346,10 @@ li {
   background-color: #fafffb;
   border-radius: 8px;
   border: solid 1px #ACCAB0;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease !important;
   text-align: start;
   max-width: 70vw;
+
 }
 
 .btn-parceiro:hover {
@@ -1367,6 +1370,7 @@ li {
 .parceiro-image img {
   width: 100%;
   border-radius: 8px;
+  box-shadow: #62b5d5 10px 10px 60px 0px;
 }
 
 @media (max-width: 900px){
@@ -1503,8 +1507,8 @@ li {
 }
 
 .footer-policy-links li a {
-  color: #666;
-  
+  color: #fffffff1;
+  text-decoration: underline;
 }
 
 .footer-policy-links li a:hover {
@@ -1545,7 +1549,7 @@ li {
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
-  max-width: 650px;
+  max-width: 700px;
   background: #222;
   color: #fff;
   padding: 15px 20px;
@@ -1575,8 +1579,8 @@ li {
   padding: 8px 15px;
   border-radius: 4px;
   cursor: pointer;
-  margin-left: 15px;
   font-weight: bold;
+  margin-top: 10px;
 }
 
 /* Botão BackTop */
@@ -1699,7 +1703,7 @@ li {
 /* ação / botão */
 .site-alert-actions { display:flex; align-items:center; }
 .site-alert-btn {
-  background: linear-gradient(90deg,#00a859 0%, #007a4a 100%);
+  background: #4caf50;
   color: #fff;
   border: 0;
   padding: 10px 14px;
