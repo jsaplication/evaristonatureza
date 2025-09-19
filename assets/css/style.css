@@ -200,7 +200,7 @@ li {
 }
 
 .btn-ajude:hover {
-  background: #35e243f3;
+  background: #2ef53f;
 }
 /* Estilização botões do header */
 
@@ -524,7 +524,7 @@ li {
 .btn-primary {
   display: inline-block;
   padding: 0.7rem 2rem;
-    background: #90d12f;
+    background: rgb(135, 204, 31);
   color: #000000;
   font-weight: 400;
   border-radius: 8px;
@@ -533,7 +533,7 @@ li {
 }
 
 .btn-primary:hover {
-  background-color: #7aaf29;
+  background-color: rgb(163, 241, 45);
 }
 
 /* Navegação */
@@ -610,6 +610,13 @@ li {
   padding: 100px 35px;
   background: #00000000;
 }
+
+.hero-carousel {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  cursor: grab;
+}
 }
 
 @media (max-width: 600px){
@@ -678,9 +685,9 @@ li {
 }
 .nosso-impacto .img-decoracao{
   position: absolute;
-  width: 70px;
-  left: 10px;
-  top: 18px;
+  width: 55px;
+  left: 20px;
+  top: 25px;
 }
 
 .impacto-titulo::after{
@@ -859,10 +866,14 @@ li {
 
 .nossamissao-section .img-decoracao{
   position: absolute;
-  width: 120px;
-  right: -23rem;
-  top: 35px;
-  transform: translateX(8px) rotate(-115deg);
+  width: 55px;
+  right: 35.9rem;
+  top: 483px;
+}
+@media (max-width: 990px){
+.nossamissao-section .img-decoracao{
+  display: none;
+}
 
 }
 
@@ -900,7 +911,7 @@ li {
   text-decoration: none;
   font-weight: 500;
   border-radius: 4px;
-  transition: all 0.2s ease !important;
+  transition: all 0.2s ease;
   width: 533px;
   text-align: center;
 }
