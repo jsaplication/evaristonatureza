@@ -16,16 +16,16 @@ html { scroll-behavior: smooth; }
 :root {
   --color-white: #fff;
   --color-dark: #000;
-  --color-green: #149849;
-  --color-green2: #B4FFD2;
-  --color-green3: #0DA938;
+  --color-green: #1b4332;
+  --color-green2: #209748;
+  --color-green3: #8fd12f;
   --font-heading: 'Amatic SC', cursive;
   --spacing-section: 7rem;
   --spacing-content: 6rem;
   font-size: 16px;
-  --primary-green: #149849;   /* seu verde vibrante */
-  --light-green: #B4FFD2;
-  --white: #fff;
+  --primary-green: #1b4332;   /* seu verde vibrante */
+  --light-green: #368a67;
+  --white: #fff; 
    --header-bg: rgba(255,255,255,0.95);
   --accent: #00a859;
   --header-transition: 0.25s;
@@ -75,7 +75,7 @@ li {
   left: 0;
   width: 100%;
   z-index: 1100;
-  height: 70px;
+  height: 75px;
   background: transparent;
   padding: 0;
 }
@@ -85,14 +85,14 @@ li {
   top: 0px !important;
   left: 0px !important;
   width: 100%;
-  height: 70px;
+  height: 75px;
   background-color: #1b4332;
   z-index: 1000;
-  transition: all 0.4s ease;
+  transition: all 0.2s ease;
 }
 
 .header-fixo.scrolled .logo .logoimg {
-  height: 83px;
+  height: 85px;
 }
 
 /* Logo */
@@ -108,6 +108,29 @@ li {
   content: url('/assets/img/Logo-branca.png'); 
 }
 }
+
+.menu-item a {
+  position: relative;
+  text-decoration: none;
+  color: #29312A;
+  padding: 5px 0;
+}
+
+.menu-item a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #2e7d32; /* cor da barrinha */
+  transition: width 0.3s ease;
+}
+
+.menu-item a.active::before {
+  width: 100%;
+}
+
 
 .main-nav .logoimg {
   display: none;
@@ -142,7 +165,7 @@ li {
 .menu-item a::after {
   content: '';
   position: absolute;
-  bottom: 14px;
+  bottom: 13px;
   left: 0;
   width: 0;
   height: 3.6px;
@@ -158,7 +181,7 @@ li {
 @media (min-width: 991px){
   .submenu {
   position: absolute;
-  top: 55px;
+  top: 60px;
   left: 0;
   background: #fff;
   border-radius: 6px;
@@ -191,6 +214,7 @@ li {
 .btn-ajude {
   background-color: #35e244;
   padding: 0.6rem 1rem;
+  background-color: #2ef53f;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 400;
@@ -200,7 +224,7 @@ li {
 }
 
 .btn-ajude:hover {
-  background: #2ef53f;
+    background-color: #35e244;
 }
 /* Estilização botões do header */
 
@@ -524,7 +548,9 @@ li {
 .btn-primary {
   display: inline-block;
   padding: 0.7rem 2rem;
-    background: rgb(135, 204, 31);
+      background-color: rgb(163, 241, 45);
+
+
   color: #000000;
   font-weight: 400;
   border-radius: 8px;
@@ -533,7 +559,7 @@ li {
 }
 
 .btn-primary:hover {
-  background-color: rgb(163, 241, 45);
+  background-color: rgb(135, 204, 31);
 }
 
 /* Navegação */
@@ -700,7 +726,7 @@ li {
 }
 
 .impacto-titulo {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #006837;
   margin-bottom: 17px;
   justify-self: center;
@@ -1174,7 +1200,7 @@ li {
 
 /* DOE E TRANSFORME */
 
-/* SOBRRE NÓS */
+/* SOBRE NÓS */
 .sobrenos-section {
   padding: 20px 20px 80px;
   background: #ffffff;
@@ -1302,7 +1328,7 @@ li {
 }
 }
 
-/* SECTION 7 QUEM SOMOS */
+/* SOBRE NÓS */
 
 /* SECTION 8 PARCEIRO */
 .parceiro-section {
@@ -1356,7 +1382,7 @@ li {
   background-color: #fafffb;
   border-radius: 8px;
   border: solid 1px #ACCAB0;
-  transition: all 0.3s ease !important;
+  transition: all 0.3s ease;
   text-align: start;
   max-width: 70vw;
 
@@ -1592,6 +1618,8 @@ li {
   font-weight: bold;
   margin-top: 10px;
 }
+/* COOKIE */
+
 
 /* Botão BackTop */
 .back-to-top {
